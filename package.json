@@ -1,0 +1,23 @@
+{
+  "name": "mastering-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server --baseDir "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shagunchaurasia/mastering-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shagunchaurasia/mastering-typescript/issues"
+  },
+  "homepage": "https://github.com/shagunchaurasia/mastering-typescript#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
