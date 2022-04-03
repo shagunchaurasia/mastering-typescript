@@ -17,3 +17,18 @@ const person = {
 //     Role[Role["AUTHOR"] = 2] = "AUTHOR";
 // })(Role || (Role = {}));
 // ;
+
+
+//Starting value can be incremented using =
+
+enum RoleIncrement {ADMIN=5, READ_ONLY, AUTHOR};
+
+console.log(RoleIncrement)
+// {
+//   '5': 'ADMIN',
+//   '6': 'READ_ONLY',
+//   '7': 'AUTHOR',
+//   ADMIN: 5,
+//   READ_ONLY: 6,
+//   AUTHOR: 7
+// }
