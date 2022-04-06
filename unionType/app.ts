@@ -3,17 +3,15 @@ function combine(input1: number | string, input2: number | string) {
 
   if (typeof input1 === "number" && typeof input2 === "number") {
     result = input1 + input2;
-  }
-  else{
-      result = input1.toString() + input2.toString();
+  } else {
+    result = input1.toString() + input2.toString();
   }
 
-  return result
+  return result;
 }
 
-console.log("Shagun","Chaurasia")
-console.log("Shagun", 2);
-console.log(4+8)
-console.log(4 + "Test");
-console.log(4 + "5");
-
+console.log(combine("Shagun", "Chaurasia"));
+console.log(combine("Shagun", 2));
+console.log(combine(4, 8));
+console.log(combine(4, "Test"));
+console.log(combine(4, "5"));
