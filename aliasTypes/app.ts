@@ -23,3 +23,4 @@ console.log(combine(4, 8, "as-number"));
 console.log(combine(4, "36", "as-number"));
 console.log(combine("4", "5", "as-number"));
 console.log(combine("Shagun ", "Chaurasia", "as-text"));
+export {}; // 👈️ make file ES Module

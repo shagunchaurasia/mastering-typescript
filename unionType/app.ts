@@ -15,3 +15,4 @@ console.log(combine("Shagun", 2));
 console.log(combine(4, 8));
 console.log(combine(4, "Test"));
 console.log(combine(4, "5"));
+export {}; // 👈️ make file ES Module

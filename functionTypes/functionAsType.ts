@@ -16,3 +16,5 @@ let combineValues: (n1: number, n2: number) => number;
 combineValues = add;
 
 console.log(combineValues(2,4))
+
+export {}; // 👈️ make file ES Module

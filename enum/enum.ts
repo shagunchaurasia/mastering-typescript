@@ -32,3 +32,6 @@ console.log(RoleIncrement)
 //   READ_ONLY: 6,
 //   AUTHOR: 7
 // }
+
+
+export {}; //  make file ES Module

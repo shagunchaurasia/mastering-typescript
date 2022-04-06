@@ -1,6 +1,7 @@
-function add(n1: number, n2: number, showResult: boolean): number {
+function add(n1: number, n2: number, showResult: boolean): number|void {
   if (showResult) {
     console.log(n1 + n2);
+    
   } else {
     return n1 + n2;
   }
@@ -11,3 +12,4 @@ const number2 = 2.8;
 const printResult = true;
 
 const result = add(number1, number2, printResult);
+export {}; // 👈️ make file ES Module

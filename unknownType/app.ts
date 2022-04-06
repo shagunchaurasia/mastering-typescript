@@ -9,3 +9,4 @@ userInput = "Max";
 let userName: string;
 // userName = userInput;
 // this cannot be done becoz userInput can have any value
+export {}; // 👈️ make file ES Module
