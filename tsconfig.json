@@ -100,8 +100,7 @@
   },
   "exclude": [
     "node_modules" /*Node modules is already excluded during compilation*/
-  ] /*Put files that need to be excluded during compilation*/,
-  "include": [
-    /* Include files that are to be compiled */
-  ]
+  ] /*Put files that need to be excluded during compilation*/
+  /* Include files that are to be compiled "include": [
+  ] */
 }
