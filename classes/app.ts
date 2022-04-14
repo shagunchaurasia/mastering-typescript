@@ -1,13 +1,19 @@
-class Department{
+abstract class Department{
+
+
+    static fiscalYear = 2020;
 
     protected employees: string[] = [];
-    constructor(private readonly id: string, private name: string){
+    constructor(protected readonly id: string, private name: string){
+    //Static properties can only be accessed inside static methods so fiscal year cannot be accessed using this
         
     }
 
-    describe(this: Department){
-        console.log(`Department: ${this.id}  -  ${this.name}`);
+    static createEmployee(name: string){
+        return { name: name}
     }
+
+    abstract describe(this: Department):void;
 
     addEmployee(employee: string){
         this.employees.push(employee)
@@ -33,6 +39,11 @@ class ITDepartment extends Department{
             return;
         }
         this.employees.push(name);
+    }
+
+    describe(){
+        console.log(`IT Department: ${this.id}`);
+
     }
 }
 
@@ -70,8 +81,15 @@ class AccountingDepartment extends Department{
     printReports(){
         console.log(this.reports)
     }
+
+    describe() {
+                console.log(`Accounting Department: ${this.id} `);
+
+    }
 }
 
+const employee = Department.createEmployee("Nupur Chaurasia");
+console.log(employee, Department.fiscalYear);
 
 const accounting = new AccountingDepartment("1",[]);
 accounting.describe();
