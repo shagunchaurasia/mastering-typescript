@@ -1,6 +1,6 @@
 class Department{
 
-    private employees: string[] = [];
+    protected employees: string[] = [];
     constructor(private readonly id: string, private name: string){
         
     }
@@ -28,6 +28,12 @@ class ITDepartment extends Department{
         super(id, "IT");
         this.admins = admins;
     }
+    addEmployee(name: string) {
+        if(name==="Shagun Chaurasia"){
+            return;
+        }
+        this.employees.push(name);
+    }
 }
 
 
@@ -37,6 +43,7 @@ class AccountingDepartment extends Department{
         this.reports = reports;
     }
 
+    
     addReport(text: string){
         this.reports.push(text)
     }
@@ -52,12 +59,13 @@ accounting.describe();
 accounting.addEmployee("Anoop Gupta");
 accounting.addEmployee("Indu Tokas");
 accounting.printEmployeeInformation();
-accounting.addReport("Finalcial Report")
+accounting.addReport("Financial Report")
 accounting.printReports();
 
 
 const software = new ITDepartment("2", ['Shagun Chaurasia']);
 software.describe();
 software.addEmployee("Rohit Chaurasia")
+software.addEmployee("Shagun Chaurasia")
 software.printEmployeeInformation();
 
